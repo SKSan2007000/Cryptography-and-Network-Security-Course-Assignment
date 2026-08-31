@@ -1,0 +1,29 @@
+RUN COMMANDS
+===========
+1. Open CMD in EHR_CryptoGuard_Assignment5
+2. If venv already exists:
+   venv\Scripts\activate
+   python -m pip install -r requirements.txt
+3. Test:
+   python -m pytest tests\test_crypto.py -v
+4. Start:
+   uvicorn app.main:app --reload --port 8000
+5. Open browser:
+   http://127.0.0.1:8000
+
+If starting fresh:
+python -m venv venv
+venv\Scripts\activate
+python -m pip install -r requirements.txt
+python -m pytest tests\test_crypto.py -v
+uvicorn app.main:app --reload --port 8000
+
+Stop server with CTRL+C.
+
+GitHub:
+git init
+git add .
+git commit -m "EHR CryptoGuard v3 academic implementation"
+git branch -M main
+git remote add origin <YOUR_REPOSITORY_URL>
+git push -u origin main

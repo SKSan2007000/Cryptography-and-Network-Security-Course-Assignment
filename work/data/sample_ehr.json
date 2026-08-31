@@ -1,0 +1,11 @@
+{
+  "patient_id": "EHR-DEMO-001",
+  "patient_name": "Asha Raman",
+  "date": "2026-08-31",
+  "provider": "Dr. Meera Iyer",
+  "facility": "Sentinel Telehealth Centre",
+  "diagnosis": "Acute respiratory infection",
+  "prescription": "Amoxicillin 500 mg — as prescribed",
+  "lab_summary": "CRP mildly elevated; oxygen saturation 97%",
+  "sensitivity": "RESTRICTED"
+}

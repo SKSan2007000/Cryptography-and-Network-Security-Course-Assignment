@@ -1,0 +1,20 @@
+EHR CryptoGuard — Vercel deployment
+
+1. Push the entire project folder to GitHub.
+2. In Vercel choose Add New Project -> Import the GitHub repository.
+3. Do not set the project framework to a different framework manually.
+4. Vercel should detect api/index.py as the Python serverless entry point.
+5. Deploy.
+
+Local test:
+  python -m venv venv
+  venv\Scripts\activate
+  pip install -r requirements.txt
+  python -m pytest tests\test_crypto.py -v
+  uvicorn app.main:app --reload --port 8000
+
+Open:
+  http://127.0.0.1:8000
+
+The Vercel entry point is api/index.py and exports the FastAPI instance as `app`.
+The original application remains in app/main.py.
